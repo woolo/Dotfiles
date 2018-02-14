@@ -1,5 +1,8 @@
 * Dotfiles
 ** How to use on a new machine
 #+BEGIN_SRC shell
-
+  #!/bin/bash
+  cd ~
+  git clone https://github.com/woolo/dotfiles.git
+  source ~/dotfiles/install.sh
 #+END_SRC
