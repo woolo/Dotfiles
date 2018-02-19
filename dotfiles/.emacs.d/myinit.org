@@ -8,6 +8,7 @@
   (fset 'yes-or-no-p 'y-or-n-p)  ; type y or n instead of yes or no
   (global-linum-mode t)  ; enable line numbers globally; (global-flycheck-mode t); ; enable flycheck globally
   (add-hook 'before-save-hook 'delete-trailing-whitespace)  ; remove trailing space when saving
+  (setq mode-require-final-newline t)                       ; add a newline at the end of the file if there is not one
   (exec-path-from-shell-copy-env "PATH") ; let $PATH variable be read by Emacs, we may also need to install exec-path-from-shell package
 #+END_SRC
 * key bindings
