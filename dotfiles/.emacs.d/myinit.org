@@ -660,3 +660,24 @@ M-x find-name-dired
     (add-to-list 'load-path "~/.emacs.d/elisp/pde/lisp")
     (load "pde-load")
   #+END_SRC
+* git
+#+BEGIN_SRC emacs-lisp
+  (use-package magit
+    :ensure t
+    :init
+    (progn
+    (bind-key "C-x g" 'magit-status)
+    ))
+
+    (use-package git-gutter
+    :ensure t
+    :init
+    (global-git-gutter-mode +1))
+
+    (global-set-key (kbd "M-g M-g") 'hydra-git-gutter/body)
+
+
+    (use-package git-timemachine
+    :ensure t
+    )
+#+END_SRC
