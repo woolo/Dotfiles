@@ -145,7 +145,7 @@
       ("M-s" . avy-goto-word-1)) ;; changed from char as per jcs
   #+END_SRC
 
-`* Autocomplete
+* Autocomplete
   #+BEGIN_SRC emacs-lisp
     (use-package auto-complete
     :ensure t
