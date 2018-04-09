@@ -681,7 +681,3 @@ M-x find-name-dired
     :ensure t
     )
 #+END_SRC
-
-fsdakjljflksadjfklsda
-jklfsda;jflk;a
-kfjasd;k
