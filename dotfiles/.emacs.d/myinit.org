@@ -1,7 +1,5 @@
 #+STARTUP: overview
 * interface tweaks
-
-
 #+BEGIN_SRC emacs-lisp
   (setq inhibit-startup-message t)  ; hide the startup screen
   (tool-bar-mode -1)  ; -1 to hide the toolbar to give us more space
@@ -147,7 +145,7 @@
       ("M-s" . avy-goto-word-1)) ;; changed from char as per jcs
   #+END_SRC
 
-* Autocomplete
+`* Autocomplete
   #+BEGIN_SRC emacs-lisp
     (use-package auto-complete
     :ensure t
@@ -155,7 +153,6 @@
     (progn
       (ac-config-default)
       (global-auto-complete-mode t)
-      (global-flycheck-mode t)  ;; enable flycheck globally
       ))
   #+END_SRC
 
@@ -318,7 +315,7 @@
     (use-package flycheck
       :ensure t
       :init
-      (global-flycheck-mode t)
+      (global-flycheck-mode t)  ;; enable flycheck globally
       ;; use flycheck not flymake with elpy
       ;; (when (require 'flycheck nil t)
       ;;   (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
