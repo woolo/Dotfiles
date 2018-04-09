@@ -12,7 +12,10 @@
 (setq package-enable-at-startup nil)    ; do not enable package at startup?
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
-
+(add-to-list 'package-archives
+	     '("melpa2" . "http://www.mirrorservice.org/sites/melpa.org/packages/"))
+(add-to-list 'package-archives
+	     '("melpa3" . "http://www.mirrorservice.org/sites/stable.melpa.org/packages/"))
 (package-initialize)
 
 ;; Bootstrap `use-package'
