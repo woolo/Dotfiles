@@ -76,7 +76,7 @@
  '(org-startup-indented t)
  '(package-selected-packages
    (quote
-    (wgrep dired+ markdown-mode noflet org-ac iedit expand-region hungry-delete beacon better-shell ob-fsharp elisp-slime-nav ac-slime htmlize ox-reveal zenburn-theme which-key use-package try solarized-theme slime py-autopep8 org-bullets material-theme fsm fsharp-mode exec-path-from-shell elpy ein counsel color-theme-sanityinc-tomorrow better-defaults ace-window)))
+    (hydra git-timemachine git-gutter magit wgrep dired+ markdown-mode noflet org-ac iedit expand-region hungry-delete beacon better-shell ob-fsharp elisp-slime-nav ac-slime htmlize ox-reveal zenburn-theme which-key use-package try solarized-theme slime py-autopep8 org-bullets material-theme fsm fsharp-mode exec-path-from-shell elpy ein counsel color-theme-sanityinc-tomorrow better-defaults ace-window)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
