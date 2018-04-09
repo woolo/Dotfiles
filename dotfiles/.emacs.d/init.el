@@ -64,6 +64,7 @@
  '(nrepl-message-colors
    (quote
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
+ '(org-babel-load-languages (quote ((emacs-lisp . t) (shell . t) (python . t))))
  '(org-default-notes-file (concat org-directory "/notes.org"))
  '(org-directory "~/orgNote/orgfiles")
  '(org-export-html-postamble nil)
