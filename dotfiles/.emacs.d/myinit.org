@@ -137,7 +137,7 @@
   #+END_SRC
 
 * Avy-navigate by searching for a letter on the screen and jumping to it
-  See https://github.com/abo-abo/avy for more info
+See https://github.com/abo-abo/avy for more info
   #+BEGIN_SRC emacs-lisp
     (use-package avy  ; allowing search and go to a single character
       :ensure t
@@ -149,6 +149,31 @@
       ("M-s" . avy-goto-word-1)) ;; changed from char as per jcs
   #+END_SRC
 
+* projectile
+Projectile considers a sub-directory tree to be a project if it's a
+git or other source control repo, if it's created by tool like lein,
+maven, or sbt, or if you put an empty file named .projectile in the
+root directory of the project.
+
+Projectile learns about projects when you open a file in that project
+and then stores that information in an Emacs bookmark file in your
+.emacs.d directory.
+
+One can switch between projects using C-c p and when in a project,
+load another file using C-c f.
+#+BEGIN_SRC emacs-lisp
+  ;; projectile
+  (use-package projectile
+    :ensure t
+    :config
+    (projectile-global-mode)
+  (setq projectile-completion-system 'ivy))
+
+  (use-package counsel-projectile
+    :ensure t
+    :config
+    (counsel-projectile-on))
+#+END_SRC
 * Autocomplete
   #+BEGIN_SRC emacs-lisp
     (use-package auto-complete
