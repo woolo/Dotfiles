@@ -1,0 +1,3 @@
+[submodule "dotfiles/emacs.d"]
+	path = dotfiles/emacs.d
+	url = git@github.com:woolo/emacs.d.git
